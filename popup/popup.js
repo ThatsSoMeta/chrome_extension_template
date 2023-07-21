@@ -1,1 +1,1 @@
-console.log("This is the popup");
+console.log("This is the popup.js");
