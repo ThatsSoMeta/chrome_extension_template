@@ -1,0 +1,1 @@
+chrome.devtools.panels.create("Facelift", null, "/devtools/devtools.html");

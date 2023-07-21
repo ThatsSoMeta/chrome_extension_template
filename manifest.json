@@ -1,0 +1,28 @@
+{
+  "name": "facelift",
+  "version": "0.0.1",
+  "devtools_page": "devtools/devtools.html",
+  "manifest_version": 3,
+  "description": "Helping you find fonts",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/color_pop.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "activeTab",
+    "declarativeContent"
+  ]
+}
